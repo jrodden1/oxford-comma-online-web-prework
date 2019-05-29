@@ -5,7 +5,8 @@ def oxford_comma(array)
     return array.join ' and '
   elsif array.length >= 3
     last = array.pop
-    formatted = array.join ', ' + ", and #{last}"
+    formatted = array.join ', '
+    complete = formatted + "and #{last}"
   else
     puts "Something went wrong."
   end
