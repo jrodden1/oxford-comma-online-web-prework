@@ -7,6 +7,5 @@ def oxford_comma(array)
   when array.length >= 3
     last = array.pop
     formatted = array.join ', ' + ", and #{last}"
-  end
-    
+  end    
 end
